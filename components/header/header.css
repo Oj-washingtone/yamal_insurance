@@ -12,6 +12,7 @@
 .header-links-container ul {
 	display: flex;
 	align-items: center;
+	flex-wrap: nowrap;
 	gap: 40px;
 }
 .header-links-container {
@@ -25,7 +26,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 30px;
+	gap: 20px;
 	width: 96%;
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -40,6 +41,7 @@
 .header > section span {
 	display: flex;
 	align-items: center;
+	padding: 2px;
 	justify-content: center;
 	gap: 10px;
 }
@@ -61,6 +63,27 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 30px;
+	flex-wrap: wrap;
+}
+.header section ul > li {
+	position: relative;
+	padding: 1px;
+}
+.header section ul > li::before {
+	height: 100%;
+	width: 0%;
+	position: absolute;
+	top: 0;
+	content: "";
+	transition: all 0.3s ease-in-out;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding-bottom: 10px !important;
+	border-bottom: solid 2px var(--color-primary);
+}
+.header section ul > li:hover:before {
+	width: 100%;
 }
 .header .help,
 .header .callback-request {
@@ -124,4 +147,27 @@
 .header .buy-now:hover:before,
 .header .self-service:hover:before {
 	width: 100%;
+}
+.menu {
+	display: none;
+	font-size: 22px;
+	font-weight: bolder !important;
+}
+.menu i {
+	cursor: pointer;
+}
+
+/* =======================Header media query ====================================*/
+@media screen and (max-width: 1170px) {
+	.header-links-container ul > li {
+		display: none;
+	}
+	.menu {
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 620px) {
+	.header-links-container ul > span {
+		display: none;
+	}
 }

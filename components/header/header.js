@@ -29,6 +29,9 @@ export default function Header() {
 					<div className="search-container">
 						<i className="bi bi-search"></i>
 					</div>
+					<div className="menu">
+						<i className="bi bi-list"></i>
+					</div>
 				</div>
 			</nav>
 
