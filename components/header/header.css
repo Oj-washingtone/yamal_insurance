@@ -163,11 +163,21 @@
 		display: none;
 	}
 	.menu {
-		display: inline-block;
+		display: flex;
 	}
 }
 @media screen and (max-width: 620px) {
 	.header-links-container ul > span {
 		display: none;
+	}
+}
+@media screen and (max-width: 420px) {
+	.header nav {
+		gap: 0 !important;
+	}
+}
+@media screen and (max-width: 330px) {
+	.header-links-container {
+		gap: 0;
 	}
 }

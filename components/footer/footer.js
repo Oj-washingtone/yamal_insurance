@@ -1,9 +1,15 @@
 /** @format */
 import "./footer.css";
+import footerImage from "../../public/img/footerimg.webp";
+import Image from "next/image";
 
 export default function Footer() {
 	return (
 		<div className="footer-container">
+			<Image
+				src={footerImage}
+				alt="footer-image"
+			/>
 			<div className="footer">
 				<div className="footer-item-box">
 					<div className="footer-item">
