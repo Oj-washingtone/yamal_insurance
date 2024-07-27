@@ -1,0 +1,30 @@
+/** @format */
+
+:root {
+	--font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+		"Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+		"Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+	/* --dell-blue: #0076ce; */
+	--dell-blue: #1c88e3;
+	--color-primary: #f6f6f6;
+	--color-white: #fff;
+	--color-font: #1f305e;
+	--color-red: #ba0c2f;
+}
+* {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+body {
+	box-sizing: border-box;
+	font-family: var(--color-font);
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--color-font);
+	background-color: var(--color-primary);
+	overflow-x: hidden;
+}
+ul {
+	margin: 0 !important;
+}

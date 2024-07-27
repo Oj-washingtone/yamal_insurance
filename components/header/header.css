@@ -1,0 +1,127 @@
+/** @format */
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: max-content;
+	width: 100%;
+}
+
+.header-links-container ul {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.header-links-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: nowrap;
+}
+.header nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	width: 96%;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.header ul li {
+	list-style: none;
+	cursor: pointer;
+	margin: 0;
+	white-space: nowrap;
+}
+.header-links-container > ul span,
+.header > section span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.header section {
+	background-color: var(--dell-blue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--color-primary);
+	width: inherit;
+	padding: 10px 0;
+}
+.header section ul {
+	display: flex;
+	width: 96%;
+	margin: 0 auto;
+	padding: 5px;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+}
+.header .help,
+.header .callback-request {
+	background-color: var(--dell-blue);
+	color: var(--color-primary);
+	padding: 5px 20px;
+	white-space: nowrap;
+	border-radius: 20px;
+}
+.header .callback-request {
+	background-color: var(--color-red);
+}
+.header .search-container i {
+	font-size: 18px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.header .buy-now,
+.header .self-service {
+	border: solid 1px var(--color-primary);
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 5px 16px;
+	position: relative;
+	border-radius: 20px;
+	transition: all 0.25s ease-in-out;
+}
+
+.header .buy-now:hover i,
+.header .self-service:hover i,
+.header .buy-now:hover small,
+.header .self-service:hover small {
+	color: var(--color-font);
+	transform: all 0.3s ease-in-out;
+}
+.header .buy-now i,
+.header .buy-now small,
+.header .self-service i,
+.header .self-service small {
+	z-index: 1;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.header .buy-now::before,
+.header .self-service::before {
+	position: absolute;
+	width: 0%;
+	left: 0;
+	height: 100%;
+	content: "";
+	color: var(--color-red);
+	background-color: var(--color-primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: inherit;
+	transition: all 0.25s ease-in-out;
+}
+.header .buy-now:hover:before,
+.header .self-service:hover:before {
+	width: 100%;
+}

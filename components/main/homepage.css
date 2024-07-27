@@ -1,0 +1,169 @@
+/** @format */
+
+.img-container {
+	background-color: brown;
+	height: 420px;
+	width: 96%;
+	background-image: url(../../public/img/insurance.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 20px !important;
+	margin: 0 auto;
+	border-bottom-left-radius: 100px !important;
+	border-radius: 10px;
+	position: relative;
+}
+.img-caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: inherit;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: var(--color-primary);
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 20px;
+	padding-left: 36px;
+	justify-content: center;
+}
+.img-caption button {
+	background-color: var(--color-red);
+	border: 0;
+	padding: 8px 18px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	border-radius: 20px;
+	color: var(--color-primary);
+}
+
+.services-container {
+	margin-top: 20px !important;
+	padding: 10px;
+	display: flex;
+	width: 100%;
+	height: max-content;
+	align-items: center;
+	justify-content: center;
+}
+
+/* =========================Services Section================================ */
+.services {
+	margin: 0 auto;
+	width: 96%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.each-service-container {
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	border-bottom: dotted 1px var(--dell-blue);
+	overflow-x: scroll;
+	padding-bottom: 20px !important;
+}
+.each-service-container::-webkit-scrollbar {
+	display: none;
+}
+.each-service-container span {
+	background-color: var(--color-white);
+	height: 100px;
+	width: 100px;
+	box-shadow: 0 0 1px 1px #ebebeb;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	cursor: pointer;
+	gap: 6px;
+	font-size: 16px;
+	transition: all 0.2s ease-in-out;
+}
+.each-service-container span:hover {
+	box-shadow: 0 0 1px 1px var(--dell-blue);
+	color: var(--dell-blue);
+}
+.each-service-container span i {
+	color: var(--dell-blue);
+	font-size: 24px;
+}
+
+.each-service-container span small {
+	text-align: center;
+}
+
+/* ================================================================ */
+
+/* ========================== Recommendations ===================== */
+
+.recommendations-container {
+	margin-top: 16px !important;
+	display: flex;
+	padding: 6px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: max-content;
+}
+.recommendations {
+	padding: 6px;
+	width: 96%;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto !important;
+}
+.figure-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.figure-container figure img {
+	width: inherit;
+	height: auto;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: all 0.5s ease-in-out;
+}
+.figure-container figure .fig-image {
+	overflow: hidden;
+	width: inherit;
+	height: 220px;
+}
+.figure-container figure {
+	width: 340px;
+	cursor: pointer;
+	box-sizing: border-box;
+	box-shadow: 0 0 1px 1px #ebebeb;
+	overflow: hidden;
+	border-radius: 20px;
+}
+.figure-container figure figcaption {
+	background-color: var(--color-white);
+	padding: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.figure-container figure figcaption h4,
+.figure-container figure figcaption span {
+	color: var(--dell-blue);
+}
+
+.zoom {
+	transform: scale(1.2);
+}
+/* ================================================================= */
