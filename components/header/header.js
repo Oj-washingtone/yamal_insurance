@@ -1,11 +1,20 @@
 /** @format */
+"use client";
 import "./header.css";
 import logo from "../../public/img/logo.png";
 import Image from "next/image";
+import { useState } from "react";
+import Headerdropdown from "./headerdropdown";
 
 export default function Header() {
+	const [dropDown, setDropDown] = useState(false);
+
 	return (
 		<header className="header">
+			<Headerdropdown
+				down={dropDown}
+				Dropped={setDropDown}
+			/>
 			<nav>
 				<div className="logo-container">
 					<Image
@@ -30,7 +39,9 @@ export default function Header() {
 						<i className="bi bi-search"></i>
 					</div>
 					<div className="menu">
-						<i className="bi bi-list"></i>
+						<i
+							onClick={() => setDropDown(true)}
+							className="bi bi-list"></i>
 					</div>
 				</div>
 			</nav>

@@ -65,11 +65,13 @@
 	gap: 30px;
 	flex-wrap: wrap;
 }
-.header section ul > li {
+.header section ul > li,
+.header-links-container ul > li {
 	position: relative;
 	padding: 1px;
 }
-.header section ul > li::before {
+.header section ul > li::before,
+.header-links-container ul > li::before {
 	height: 100%;
 	width: 0%;
 	position: absolute;
@@ -82,7 +84,11 @@
 	padding-bottom: 10px !important;
 	border-bottom: solid 2px var(--color-primary);
 }
-.header section ul > li:hover:before {
+.header-links-container ul > li::before {
+	border-bottom: solid 2px var(--color-font);
+}
+.header section ul > li:hover:before,
+.header-links-container ul > li:hover::before {
 	width: 100%;
 }
 .header .help,
@@ -156,6 +162,54 @@
 .menu i {
 	cursor: pointer;
 }
+
+/* ============================dropdown menu======================== */
+
+.header-dropdown-container {
+	background-color: var(--dell-blue);
+	display: flex;
+	flex-direction: column;
+	z-index: 5;
+	align-items: center;
+	color: var(--color-primary);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: -100%;
+	padding: 40px 20px;
+	transition: all 0.35s ease-in-out;
+	width: 240px;
+}
+.header-dropdown-container-active {
+	right: 0 !important;
+}
+.header-dropdown-container i {
+	position: absolute;
+	top: 2px;
+	right: 6px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.header-dropdown-container ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	padding-left: 0 !important;
+	width: 100%;
+}
+.header-dropdown-container ul > li {
+	border: solid 1.5px var(--color-primary);
+	padding: 8px;
+	width: 100%;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	border-radius: 5px;
+}
+.header-dropdown-container ul > li:hover {
+	transform: scale(1.04);
+}
+/* ================================================================= */
 
 /* =======================Header media query ====================================*/
 @media screen and (max-width: 1170px) {
