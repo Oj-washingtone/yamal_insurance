@@ -30,10 +30,10 @@ export default function Recommendations() {
 							<h4>Yamal Market Fund (KES)</h4>
 							<p>
 								Invest in Yamal Money Market Fund With As Little As 5,000 And
-								Earn Up To 15.38%
+								Earn Up To 15.38%.
 							</p>
 							<span>
-								<i class="bi bi-arrow-right-circle-fill"></i> &nbsp;
+								<i className="bi bi-arrow-right-circle-fill"></i> &nbsp;
 								&nbsp;Discover Plan
 							</span>
 						</figcaption>
@@ -51,11 +51,11 @@ export default function Recommendations() {
 						<figcaption>
 							<h4>Y-Care Medical Cover</h4>
 							<p>
-								Invest in Yamal Money Market Fund With As Little As 5,000 And
-								Earn Up To 15.38%
+								Yamal care Offers You And Your Family The flexibily To choose
+								From 6 levels of Coverage Including Our Prestigous Plans.
 							</p>
 							<span>
-								<i class="bi bi-arrow-right-circle-fill"></i> &nbsp;
+								<i className="bi bi-arrow-right-circle-fill"></i> &nbsp;
 								&nbsp;Discover Plan
 							</span>
 						</figcaption>
@@ -73,11 +73,11 @@ export default function Recommendations() {
 						<figcaption>
 							<h4>Y-Senior Medical Cover</h4>
 							<p>
-								Invest in Yamal Money Market Fund With As Little As 5,000 And
-								Earn Up To 15.38%
+								A Medical Insurance Solution Designed for Seniors Aged over 65,
+								bringing you peace of mind during the Golden Years.
 							</p>
 							<span>
-								<i class="bi bi-arrow-right-circle-fill"></i> &nbsp;
+								<i className="bi bi-arrow-right-circle-fill"></i> &nbsp;
 								&nbsp;Discover Plan
 							</span>
 						</figcaption>

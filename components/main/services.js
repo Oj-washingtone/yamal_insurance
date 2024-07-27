@@ -11,44 +11,44 @@ export default function Services() {
 						<small>My Life</small>
 					</span>
 					<span>
-						<i class="bi bi-person-fill"></i>
+						<i className="bi bi-person-fill"></i>
 						<small>My Health</small>
 					</span>
 					<span>
-						<i class="bi bi-people-fill"></i>
+						<i className="bi bi-people-fill"></i>
 						<small>My Family</small>
 					</span>
 					<span>
-						<i class="bi bi-mortarboard-fill"></i>
+						<i className="bi bi-mortarboard-fill"></i>
 						<small>
 							My Child's <br />
 							Education
 						</small>
 					</span>
 					<span>
-						<i class="bi bi-cash-coin"></i>
+						<i className="bi bi-cash-coin"></i>
 						<small>
 							My <br />
 							Investments
 						</small>
 					</span>
 					<span>
-						<i class="bi bi-person-fill"></i>
+						<i className="bi bi-person-fill"></i>
 						<small>
 							My <br />
 							Retirement
 						</small>
 					</span>
 					<span>
-						<i class="bi bi-house-fill"></i>
+						<i className="bi bi-house-fill"></i>
 						<small>My House</small>
 					</span>
 					<span>
-						<i class="bi bi-car-front-fill"></i>
+						<i className="bi bi-car-front-fill"></i>
 						<small>My Car</small>
 					</span>
 					<span>
-						<i class="bi bi-airplane-engines-fill"></i>
+						<i className="bi bi-airplane-engines-fill"></i>
 						<small>My Travel</small>
 					</span>
 				</div>

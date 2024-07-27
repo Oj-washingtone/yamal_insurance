@@ -158,6 +158,9 @@
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
+.figure-container figure figcaption p {
+	font-weight: 500;
+}
 .figure-container figure figcaption h4,
 .figure-container figure figcaption span {
 	color: var(--dell-blue);
