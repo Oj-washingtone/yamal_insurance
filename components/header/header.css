@@ -229,6 +229,7 @@
 	.header nav {
 		gap: 0 !important;
 		width: 100%;
+		padding-right: 10px;
 	}
 }
 @media screen and (max-width: 330px) {
