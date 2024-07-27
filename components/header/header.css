@@ -228,6 +228,7 @@
 @media screen and (max-width: 420px) {
 	.header nav {
 		gap: 0 !important;
+		width: 100%;
 	}
 }
 @media screen and (max-width: 330px) {
